@@ -1,0 +1,20 @@
+server:
+  port: 8769
+
+spring:
+  application:
+    name: backstage-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+zuul:
+  routes:
+    # 路由名，自定义
+    backstage-feign:
+      #请求转发的路径路径名自定义 **代表请求的方法
+      path: /api-a/**
+      #指定消费者的实例名称
+      serviceId: backstage-feign

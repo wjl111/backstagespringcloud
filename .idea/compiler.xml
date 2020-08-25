@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="backstage-provider" />
+        <module name="backstage-service-api" />
+        <module name="backstagecommon" />
+        <module name="backstage-feign" />
+        <module name="backstageserviceapi" />
+        <module name="backstage-zuul" />
+        <module name="backstage-config-server" />
+        <module name="backstage-common" />
+        <module name="backstage-eureka" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="backstage-common" options="-parameters" />
+      <module name="backstage-config-server" options="-parameters" />
+      <module name="backstage-eureka" options="-parameters" />
+      <module name="backstage-feign" options="-parameters" />
+      <module name="backstage-provider" options="-parameters" />
+      <module name="backstage-service-api" options="-parameters" />
+      <module name="backstage-zuul" options="-parameters" />
+      <module name="backstagecommon" options="-parameters" />
+      <module name="backstageserviceapi" options="-parameters" />
+      <module name="backstagespringcloud" options="-parameters" />
+    </option>
+  </component>
+</project>
